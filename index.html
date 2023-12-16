@@ -41,6 +41,25 @@
                 background-color: #783ea8;
             }
         }
+
+        #menu {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #151515;
+            border-radius: 50%;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 300ms;
+
+
+            &:hover {
+                background-color: #9850d3;
+            }
+        }
     </style>
 </head>
 
@@ -59,8 +78,19 @@
                     <li><a href="#hobbies">Pasatiempos</a></li>
                 </ul>
             </nav>
-            <div></div>
+            <div>
+                <button id="menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </div>
+
+        <aside class="header__sidebar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#skill">Habilidades</a></li>
+                <li><a href="#hobbies">Pasatiempos</a></li>
+            </ul>
+        </aside>
     </header>
     <main>
         <!-- Seccion de Presentacion y Bienvenida -->
@@ -141,7 +171,8 @@
             <div class="info__container">
                 <section class="info__item"><i class="fa-solid fa-phone"></i> <span>+58 412-4814575</span></section>
                 <section class="info__item"><i class="fa-solid fa-envelope"></i>
-                    <span>sandovaltorrealbaalexander@gmail.com</span></section>
+                    <span>sandovaltorrealbaalexander@gmail.com</span>
+                </section>
             </div>
         </section>
         <section class="copyright">

@@ -34,3 +34,13 @@ const addHeaderShadow = () => {
 window.addEventListener("scroll", () => {
 	addHeaderShadow();
 });
+
+const headerSidebar = document.querySelector(".header__sidebar");
+
+const openMenu = () => {
+	headerSidebar.classList.toggle("open__menu");
+};
+
+document.getElementById("menu").addEventListener("mousedown", () => {
+	openMenu();
+});
