@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal - Alexander Sandoval</title>
+    <script src="https://kit.fontawesome.com/14af21daf4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/xd.jpg" type="image/x-icon">
+    <script src="script.js" async></script>
+
+    <style>
+        /*
+        Estilo del boton para ir al GitHub
+        */
+        .github__button {
+            margin: 40px 0;
+            border: none;
+            border-radius: 10px;
+            background-color: #9850d3;
+            transition: background 300ms;
+            font-family: inherit;
+
+            & a {
+                display: block;
+                padding: 15px;
+                font-weight: 400;
+                color: #eee;
+
+                & i {
+                    margin-left: 10px;
+                    font-size: 1.2em;
+                }
+            }
+
+            &:hover {
+                background-color: #783ea8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra con el logo y menú de navegacion -->
+    <header>
+        <div class="header__container">
+            <div>
+                <h1 class="title__logo">AS</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#skill">Habilidades</a></li>
+                    <li><a href="#hobbies">Pasatiempos</a></li>
+                </ul>
+            </nav>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <!-- Seccion de Presentacion y Bienvenida -->
+        <section class="welcome">
+            <article class="welcome__container">
+                <div class="greetings">
+                    <h2>Hola, bienvenido</h2>
+                    <h3>Soy Alexander</h3>
+                    <p>Desarrollador de Sistemas Informáticos</p>
+
+                    <button class="github__button">
+                        <a href="https://github.com/THEALEXSAND" target="_blank"
+                            style="color: white; font-size: 1.2em;">
+                            Ir a mi GitHub
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        </buttonc>
+                </div>
+                <div class="photo">
+                    <img src="img/my-photo.jpeg" alt="Alexander Sandoval">
+                </div>
+            </article>
+        </section>
+
+        <!-- Seccion sobre mi -->
+        <section class="about">
+            <h3 id="about">Sobre mi</h3>
+            <p>
+                Soy un desarrollador de sistemas informáticos con experiencia mediana en aplicaciones de software,
+                desarrollo web, algoritmos, técnicas de desarrollo y estructura de datos.
+            </p>
+            <p>
+                Estoy motivado a trabajar y colaborar en ambientes de trabajo en donde se presenten futuros proyectos.
+            </p>
+        </section>
+
+        <!-- Seccion de mis habilidades de programacion -->
+        <section class="skills" id="skill">
+            <h3>Habilidades</h3>
+            <p>Estas son algunas de las tecnologías y lenguajes de programación dentro del entorno de desarrollo web, de
+                las cuales tengo conocimientos
+                actualmente.</p>
+            <div class="skills__container" id="skills">
+            </div>
+        </section>
+
+        <!-- Seccion de mis pasatiempos e intereses -->
+        <section class="hobbies" id="hobbies">
+            <h3>Pasatiempos e intereses</h3>
+            <p>En cuanto a las cosas que me gusta hacer en mis tiempos de descanso, estas son algunas de ellas: </p>
+            <div class="hobbies__container">
+                <article class="hobbie__card">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Programación</h4>
+                </article>
+                <article class="hobbie__card">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h4>VideoJuegos</h4>
+                </article>
+                <article class="hobbie__card">
+                    <i class="fa-solid fa-language"></i>
+                    <h4>Idiomas</h4>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Pie de la pagina -->
+    <footer>
+        <section class="info">
+            <div class="social__media">
+                <a href="https://github.com/THEALEXSAND" target="_blank" style="color: white; font-size: 1.2em;">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <p style="text-align: center; font-size: 14px; font-weight: 400;">Avenida Yaracuy con Avenida Obispo Alvarado. Urbanización "La Floresta". 3201 San Felipe. Estado Yaracuy.</p>
+            <div class="info__container">
+                <section class="info__item"><i class="fa-solid fa-phone"></i> <span>+58 412-4814575</span></section>
+                <section class="info__item"><i class="fa-solid fa-envelope"></i> <span>sandovaltorrealbaalexander@gmail.com</span></section>
+            </div>
+        </section>
+        <section class="copyright">
+            <span style="text-align: center;">Todos los Derechos Reservados &#169 2023</span>
+            <span style="text-align: center;">Realizado por: Alexander Sandoval</s>
+        </section>
+    </footer>
+</body>
+
+</html>
